@@ -8,8 +8,8 @@
  * 5) Los pagos online NO están activos. Consulta README.md antes de vender o cobrar.
  */
 const CONFIG = {
-  whatsappNumber: "56900000000",
-  contactEmail: "contacto@tudominio.cl"
+  whatsappNumber: "+56950040375",
+  contactEmail: "consultoriakyj@gmail.com"
 };
 
 const $ = (selector, root = document) => root.querySelector(selector);
@@ -131,7 +131,7 @@ $("#bookingForm").addEventListener("submit", event => {
     "",
     "Entiendo que la reserva queda pendiente de confirmación."
   ].join("\n");
-  if (CONFIG.whatsappNumber === "56900000000") {
+  if (CONFIG.whatsappNumber === "+56950040375") {
     showToast("Configura el número de WhatsApp en script.js");
     return;
   }
